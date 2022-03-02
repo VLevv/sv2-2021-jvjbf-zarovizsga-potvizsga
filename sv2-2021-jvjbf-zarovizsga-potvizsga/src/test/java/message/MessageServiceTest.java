@@ -24,8 +24,8 @@ class MessageServiceTest {
         MariaDbDataSource dataSource = new MariaDbDataSource();
         try {
             dataSource.setUrl("jdbc:mariadb://localhost:3306/exam-test?useUnicode=true");
-            dataSource.setUserName("activitytracker");
-            dataSource.setPassword("activitytracker");
+            dataSource.setUserName("root");
+            dataSource.setPassword("training");
         } catch (SQLException sqle) {
             throw new IllegalStateException("Cannot reach DataBase!", sqle);
         }
